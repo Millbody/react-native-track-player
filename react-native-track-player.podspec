@@ -7,6 +7,8 @@ Pod::Spec.new do |s|
   s.version = package["version"]
   s.summary = package["description"]
   s.license = package["license"]
+  
+  s.exclude_files = ["ios/RNTrackPlayer/Vendor/AudioPlayer/Example"]
 
   s.author = "David Chavez"
   s.homepage = package["repository"]["url"]
